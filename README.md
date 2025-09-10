@@ -8,10 +8,10 @@
      <img src="https://img.shields.io/badge/SQLite-black?style=for-the-badge&logoColor=white&logo=sqlite&color=003B57" alt="SQLite Badge" />
    </div>
   <br />
-  
+
   <h1 align="center">Natural Language to SQL Query Converter</h1>
   <p align="center">A robust system to translate natural language into SQL, powered by Azure OpenAI and Langchain.</p>
-  
+
   <div align="center">
     <a href="#introduction">**Introduction**</a> | <a href="#goals">**Goals**</a> | <a href="#tech-stack">**Tech Stack**</a> | <a href="#quick-start">**Quick Start**</a> | <a href="#results">**Results**</a>
   </div>
@@ -20,11 +20,7 @@
 ---
 
 ## 🤖 Introduction
-[cite_start]This project is dedicated to bridging the gap between human language and database query execution[cite: 5]. [cite_start]It's a robust system that seamlessly translates natural language queries into SQL queries and executes them with precision[cite: 8]. [cite_start]The primary objective is to empower users to interact with a database effortlessly by using natural language queries[cite: 14].
-
-<br>
-
-<br>
+[cite_start]This project is dedicated to bridging the gap between human language and database query execution[cite: 5]. [cite_start]It's a robust system that seamlessly translates natural language queries into SQL queries and executes them with precision[cite: 8]. [cite_start]The primary objective is to empower users to interact with a database effortlessly by using natural language queries[cite: 14]. [cite_start]The system is powered by Azure OpenAI services and Langchain Agents[cite: 8].
 
 ---
 
@@ -38,7 +34,7 @@ The specific goals for this project are as follows:
 
 ## ⚙️ Tech Stack
 * **Python:** The core programming language for the project.
-* [cite_start]**Langchain:** Used for its natural language processing capabilities, facilitating communication and translation services[cite: 11, 25].
+* [cite_start]**Langchain:** A blockchain-based platform for multilingual communication and translation services[cite: 11]. [cite_start]It's used for its natural language processing capabilities[cite: 25].
 * [cite_start]**Azure OpenAI:** Provides the foundation for language understanding and model deployment[cite: 12].
 * [cite_start]**SQLite:** The local database used for executing the generated SQL queries[cite: 21].
 
@@ -71,7 +67,7 @@ import os
 os.environ["OPENAI_API_TYPE"] = "azure"
 os.environ["OPENAI_API_VERSION"] = "2023-05-15"
 os.environ["OPENAI_API_BASE"] = "YOUR_AZURE_OPENAI_BASE_URL"
-os.environ["OPENENAI_API_KEY"] = "YOUR_AZURE_OPENAI_KEY"
+os.environ["OPENAI_API_KEY"] = "YOUR_AZURE_OPENAI_KEY"
 4. Run the Project
 You can run the code from your Jupyter Notebook (src/main_notebook.ipynb) or your Python script (src/main.py).
 
