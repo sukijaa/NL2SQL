@@ -1,0 +1,9 @@
+# Ignore Python environment and sensitive files
+venv/
+.env
+.ipynb_checkpoints/
+# Ignore your database file if you don't want to upload it
+# data/employees.db
+# It's recommended to upload a sample or schema instead.
+# Ignore your API key. NEVER push this to a public repo.
+# In a real project, you'd manage this with environment variables.
