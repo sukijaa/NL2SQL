@@ -71,21 +71,22 @@ First, clone the project from your Git repository. Ensure you have your `employe
 ```bash
 git clone [https://github.com/your-username/Natural-Language-to-SQL-Query-Converter.git](https://github.com/your-username/Natural-Language-to-SQL-Query-Converter.git)
 cd Natural-Language-to-SQL-Query-Converter
-'''
+```
 2. Install Dependencies
 Install the required Python packages from the requirements.txt file.
 
-Bash
+```bash
 
 pip install -r requirements.txt
 Note: This will install LangChain v0.0.227 and OpenAI v0.27.8 as required.
+```
 
 3. Set Up Azure OpenAI Environment Variables
 Secure an API key from Azure services to enable seamless integration. Create a deployment model named "gpt-35-turbo" in Azure OpenAI Studio. Then, set your environment variables for seamless integration.
 
 You can set these in your terminal or directly within your Python script:
 
-Python
+```bash
 
 import os
 
@@ -94,27 +95,28 @@ os.environ["OPENAI_API_VERSION"] = "2023-05-15"
 os.environ["OPENAI_API_BASE"] = "YOUR_AZURE_OPENAI_BASE_URL"
 os.environ["OPENAI_API_KEY"] = "YOUR_AZURE_OPENAI_KEY"
 Replace the placeholder values with your actual Azure OpenAI credentials.
-
+```
 4. Running the Project
 You can run the code from your Jupyter Notebook (src/main_notebook.ipynb) or your Python script (src/main.py).
 
-<a name="how-it-works">📈 How It Works</a>
+📈 How It Works
 The system delivers two primary outputs: the generated SQL Query and the final Answer, showcasing its ability to accurately and transparently handle user queries.
 
 Example 1: Counting Rows
 
 When you run the LangChain agent with a natural language input like "how many rows are there?", the system generates and executes the corresponding SQL query.
-
+```bash
 > Entering new SQLDatabaseChain chain...
 how many rows are there?
 
 SQLQuery: SELECT COUNT(*) FROM documents;
 SQLResult: [(50,)]
 Answer: There are 50 rows in the documents table.
+```
 Example 2: Summing a Column
 
 The system can also handle more complex queries, like calculating the total salary of all employees.
-
+```bash
 > Entering new SQLDatabaseChain chain...
 how much is the total salary of all the employees?
 
