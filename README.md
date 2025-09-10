@@ -1,7 +1,5 @@
 <div align="center">
-  <br />
-  <img src="https://github.com/user-attachments/assets/e0b6d2e6-f5a3-4a1e-8f25-3037e20b3a4a" alt="Project Banner" width="800">
-  <br />
+  
 
   <div>
     <img src="https://img.shields.io/badge/Python-black?style=for-the-badge&logoColor=white&logo=python&color=3776AB" alt="Python Badge" />
@@ -72,7 +70,7 @@ First, clone the project from your Git repository. Ensure you have your `employe
 git clone [https://github.com/your-username/Natural-Language-to-SQL-Query-Converter.git](https://github.com/your-username/Natural-Language-to-SQL-Query-Converter.git)
 cd Natural-Language-to-SQL-Query-Converter
 ```
-2. Install Dependencies
+### 2. Install Dependencies
 Install the required Python packages from the requirements.txt file.
 
 ```bash
@@ -81,7 +79,7 @@ pip install -r requirements.txt
 Note: This will install LangChain v0.0.227 and OpenAI v0.27.8 as required.
 ```
 
-3. Set Up Azure OpenAI Environment Variables
+### 3. Set Up Azure OpenAI Environment Variables
 Secure an API key from Azure services to enable seamless integration. Create a deployment model named "gpt-35-turbo" in Azure OpenAI Studio. Then, set your environment variables for seamless integration.
 
 You can set these in your terminal or directly within your Python script:
@@ -96,10 +94,10 @@ os.environ["OPENAI_API_BASE"] = "YOUR_AZURE_OPENAI_BASE_URL"
 os.environ["OPENAI_API_KEY"] = "YOUR_AZURE_OPENAI_KEY"
 Replace the placeholder values with your actual Azure OpenAI credentials.
 ```
-4. Running the Project
+### 4. Running the Project
 You can run the code from your Jupyter Notebook (src/main_notebook.ipynb) or your Python script (src/main.py).
 
-📈 How It Works
+### 📈 How It Works:
 The system delivers two primary outputs: the generated SQL Query and the final Answer, showcasing its ability to accurately and transparently handle user queries.
 
 Example 1: Counting Rows
