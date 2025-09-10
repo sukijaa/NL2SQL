@@ -82,10 +82,7 @@ os.environ["OPENAI_API_KEY"] = "YOUR_AZURE_OPENAI_KEY"
 4. Run the Project
 You can run the code from your Jupyter Notebook (src/main_notebook.ipynb) or your Python script (src/main.py).
 
-'''
-
-
-## 📈 Results
+📈 Results
 The system delivers two primary outputs: the generated SQL query and the result of its execution. This showcases the project's capability to accurately and transparently handle user queries.
 
 Example 1: Counting Rows
